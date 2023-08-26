@@ -15,7 +15,7 @@ layout = [
     [sg.Text("Enter email:", size=(12, 1)), sg.InputText(key='-INPUT2-')],
     [sg.Text("Enter password:", size=(12, 1)), sg.InputText(
         key='-PASSWORD-', password_char='●')],
-        [sg.Text("Driver Path: ", size=(12, 1)), sg.InputText(default_text="D:\B-BabyBot\path\chromedriver.exe",key='-INPUT1-')],
+        [sg.FileBrowse(key="-INPUT1-"), sg.Text("Driver Path: ", size=(45, 1))],
     [sg.Button("Run BabyScript", pad=(0, 15), font=header_font)], [
         sg.Button("Exit BabyBot", pad=(0, 0))],
     [sg.Image('babyimage.png', expand_x=True,
