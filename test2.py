@@ -23,8 +23,8 @@ layout = [
     [sg.Text("made by: eir", pad=(0, 0))]
 ]
 
-window = sg.Window("B-BabyBot", layout, margins=(200, 100),
-                   element_justification='c')
+window = sg.Window("B-BabyBot v2.0", icon="happybaby.ico", margins=(200, 100),
+                   element_justification='c').Layout(layout)
 
 
 
