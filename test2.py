@@ -76,7 +76,7 @@ def babyScript():
         sleep(2)
         driver.find_element(By.XPATH, '/html/body/header/div[2]/div[3]/div[1]/img').click()
         sleep(3)
-        driver.find_element(By.XPATH, '/html/body/header/div[2]/div[3]/div[2]/a[2]').click()
+        driver.find_element(By.TAG_NAME, 'a').click()
         sleep(3700)
 
 
@@ -98,7 +98,7 @@ while True:
         
         user_email = values['-INPUT2-']
         user_pass = values['-PASSWORD-']
-        sg.popup(f'... Initialize babyscript?')
+        sg.popup(f'Prepare your setup before clicking Ok. Move the windows somewhere where they wont be in the way etc.... Initialize babyscript?')
         print("Logging in with e-mail: " + user_email)
         running = True
         babyScript()
