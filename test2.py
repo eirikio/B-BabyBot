@@ -76,8 +76,9 @@ def babyScript():
         sleep(2)
         driver.find_element(By.XPATH, '/html/body/header/div[2]/div[3]/div[1]/img').click()
         sleep(3)
-        driver.find_element(By.TAG_NAME, 'a').click()
+        driver.find_element(By.CLASS_NAME, 'dropdown-navigation-button button small secondary').click()
         sleep(3700)
+        driver.refresh()
 
 
 while True:
