@@ -8,84 +8,158 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    height: 100vh;
+}
+
+@keyframes scolate {
+        0% {
+            transform:rotate(-5deg) scale(1.0);
+        }
+        50% {
+            transform: rotate(5deg) scale(1.1);
+        }
+        100% {
+            transform: rotate(-5deg) scale(1.0);
+        }
+
+}
+
+.page-container div {
+    border-radius: 10px;
 }
 
 .frame-7 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1350px;
-    height: 1150px;
+    position: absolute;
+    width: 1150px;
+    height: 950px;
     background: #7400b8;
-    border-radius: 5px;
-    /*transform: rotate(7deg);*/
+    animation: scolate ease-in-out 5000ms infinite running;
+    transform: rotate(-5deg);
+
 }
 
 .frame-6 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1300px;
-    height: 1100px;
+    position: absolute;
+    width: 1100px;
+    height: 900px;
     background: #6930c3;
-    /*transform: rotate(6deg);*/
+    animation: scolate ease-in-out 5000ms infinite running;
+    animation-delay: 500ms;
+    transform: rotate(-5deg);
 }
 
 .frame-5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1250px;
-    height: 1050px;
+    position: absolute;
+    width: 1050px;
+    height: 850px;
     background: #5e60ce;
-    /*transform: rotate(5deg);*/
+    animation: scolate ease-in-out 5000ms infinite running;
+    animation-delay: 1000ms;
+    transform: rotate(-5deg);
 }
 
 .frame-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1200px;
-    height: 1000px;
+    position: absolute;
+    width: 1000px;
+    height: 800px;
     background: #5390d9;
-    /*transform: rotate(4deg);*/
+    animation: scolate ease-in-out 5000ms infinite running;
+    animation-delay: 1500ms;
+    transform: rotate(-5deg);
 }
 
 .frame-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1150px;
-    height: 950px;
+    position: absolute;
+    width: 950px;
+    height: 750px;
     background: #4ea8de;
-    /*transform: rotate(3deg);*/
+    animation: scolate ease-in-out 5000ms infinite running;
+    animation-delay: 2000ms;
+    transform: rotate(-5deg);
 }
 
 .frame-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1100px;
-    height: 900px;
+    position: absolute;
+    width: 900px;
+    height: 700px;
     background: #48bfe3;
-    /*transform: rotate(2deg);*/
+    animation: scolate ease-in-out 5000ms infinite running;
+    animation-delay: 2500ms;
+    transform: rotate(-5deg);
 }
 
 .frame-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1050px;
-    height: 850px;
+    position: absolute;
+    width: 850px;
+    height: 650px;
     background: #56cfe1;
-    /*transform: rotate(1deg);*/
+    animation: scolate ease-in-out 5000ms infinite running;
+    animation-delay: 3000ms;
+    transform: rotate(-5deg);
     
 }
 
 .frame {
+    position: absolute;
     background: #64dfdf;
-    width: 1000px;
-    height: 800px;
-    /*transform: rotate(-27deg);*/
+    width: 800px;
+    height: 600px;
+    box-shadow: 0px 0px 10px #30bbbb;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Maven Pro', sans-serif;
 }
+
+.hero-section {
+    margin-top: 70px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+.hero-section h1 {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px white, 2px 2px 1px black, 3px 3px 1px hotpink ;
+}
+.hero-section h2 {
+    color: #000000;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+.hero-section h2 {
+    transform: translateY(-30px);
+}
+#h2-color {
+    color: hotpink;
+    text-shadow: 0px 0px 10px black;
+}
+
+.download-button {
+    transform: translateY(20px);
+    margin-bottom: 50px;
+
+}
+#download-btn {
+    width: 300px;
+    height: 50px;
+    background: #262929;
+    border: 1px solid black;
+    color: #fff;
+    text-shadow: 0px 0px 10px black;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#download-btn:hover {
+    background: #405050;
+}
+#download-btn:active {
+    background: black;
+}
+
+.info-buttons {
+    justify-content: flex-end;
+    align-self:center;
+}
+
