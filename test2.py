@@ -42,9 +42,8 @@ def sleep(num):
     for i in range(num):
         print("\r: {} seconds.".format(num - i), end='')
         time.sleep(1)
-
-def babyScript():
-    while running:
+        
+def login():
         bbaby_email = user_email
         bbaby_pass = user_pass
 
@@ -58,6 +57,10 @@ def babyScript():
         
         print("--Login successful!")
         
+        babyScript()
+
+def babyScript():
+    while running:
         print("--Questing!--")
         driver.find_element(By.XPATH, '/html/body/div[2]/div/div/div[3]/div[2]/div[3]/button').click()
         sleep(3)
@@ -72,9 +75,20 @@ def babyScript():
         driver.find_element(By.XPATH, '/html/body/div[12]/div/button[1]').click()
         sleep(4)
 
-        print("New quest in 1 hour! (⌐ ͡■ ͜ʖ ͡■) ")
+        print("New quest in 1 hour! (⌐ ͡■ ͜ʖ ͡■)")
         sleep(3700)
+        time.sleep(740)
         driver.refresh()
+        time.sleep(740)
+        driver.refresh()
+        time.sleep(740)
+        driver.refresh()
+        time.sleep(740)
+        driver.refresh()
+        time.sleep(740)
+        driver.refresh()
+        sleep(5)
+        
 
 
 while True:
@@ -87,6 +101,7 @@ while True:
         driver = webdriver.Chrome(service=service, options=options)
         options.add_argument("--ignore-certificate-error")
         options.add_argument("--ignore-ssl-errors")
+        options.add_argument("--ignore-certificate-errors-spki-list")
         # options.add_experimental_option('excludeSwitches', ['enable-logging'])
         options.add_experimental_option('detach', True)
         url = 'https://www.blockbabies.world/play/login.php'
@@ -98,7 +113,7 @@ while True:
         sg.popup(f'Prepare your setup before clicking Ok. Move the windows somewhere where they wont be in the way etc.... Initialize babyscript?')
         print("Logging in with e-mail: " + user_email)
         running = True
-        babyScript()
+        login()
     if event == "Exit BabyBot":
         running = False
         break
