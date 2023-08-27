@@ -72,11 +72,7 @@ def babyScript():
         driver.find_element(By.XPATH, '/html/body/div[12]/div/button[1]').click()
         sleep(4)
 
-        print("Logging out. New quest in 1 hour! (⌐ ͡■ ͜ʖ ͡■) ")
-        sleep(2)
-        driver.find_element(By.XPATH, '/html/body/header/div[2]/div[3]/div[1]/img').click()
-        sleep(3)
-        driver.find_element(By.CLASS_NAME, 'dropdown-navigation-button button small secondary').click()
+        print("New quest in 1 hour! (⌐ ͡■ ͜ʖ ͡■) ")
         sleep(3700)
         driver.refresh()
 
