@@ -2,6 +2,7 @@ body {
     margin: 0;
     background: black;
     overflow: hidden;
+    user-select: none;
 }
 
 .page-container {
@@ -119,14 +120,20 @@ body {
 }
 .hero-section h1 {
     color: rgb(0, 0, 0);
-    text-shadow: 1px 1px 1px white, 2px 2px 1px black, 3px 3px 1px hotpink ;
+    text-shadow: 2px 2px 1px #56cfe1, 
+                4px 4px 1px #48bfe3, 
+                6px 6px 1px #4ea8de, 
+                8px 8px 1px #5e60ce,
+                10px 10px 1px #5390d9,
+                12px 12px 1px #6930c3,
+                14px 14px 1px #7400b8;
 }
 .hero-section h2 {
     color: #000000;
     text-shadow: 1px 1px 1px #ffffff;
 }
 .hero-section h2 {
-    transform: translateY(-30px);
+    transform: translateY(-25px);
 }
 #h2-color {
     color: hotpink;
@@ -136,9 +143,19 @@ body {
 .download-button {
     transform: translateY(20px);
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+#dl-icon {
+    margin-right: 10px;
+    filter: invert(1);
+}
 #download-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     height: 50px;
     background: #262929;
@@ -161,5 +178,34 @@ body {
 .info-buttons {
     justify-content: flex-end;
     align-self:center;
+    flex-direction: row;
 }
+
+.info-button {
+    width: 200px;
+    height: 50px;
+    background: #262929;
+    border: 1px solid black;
+    color: #fff;
+    text-shadow: 0px 0px 10px black;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.info-button:hover {
+    background: #405050;
+}
+.info-button:active {
+    background: black;
+}
+
+.footer p {
+    text-shadow: 0px 0px 2px black;
+}
+.footer span {
+    letter-spacing: -4px;
+}
+
 
