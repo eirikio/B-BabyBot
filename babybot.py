@@ -18,12 +18,12 @@ layout = [
         [sg.FileBrowse(key="-INPUT1-"), sg.Text("Driver Path: ", size=(45, 1))],
     [sg.Button("Run BabyScript", pad=(0, 15), font=header_font)], [
         sg.Button("Exit BabyBot", pad=(0, 0))],
-    [sg.Image('babyimage.png', expand_x=True,
+    [sg.Image('images/babyimage.png', expand_x=True,
               expand_y=True, pad=(0, 15))],
-    [sg.Text("made by: eir", pad=(0, 0))]
+    [sg.Text("made by: 3ir", pad=(0, 0))]
 ]
 
-window = sg.Window("B-BabyBot v2.0", icon="happybaby.ico", margins=(200, 100),
+window = sg.Window("B-BabyBot v2.0", icon="images/happybaby.ico", margins=(200, 100),
                    element_justification='c').Layout(layout)
 
 
