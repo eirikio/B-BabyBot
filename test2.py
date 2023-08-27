@@ -76,7 +76,6 @@ def babyScript():
         sleep(4)
 
         print("New quest in 1 hour! (⌐ ͡■ ͜ʖ ͡■)")
-        sleep(3700)
         time.sleep(740)
         driver.refresh()
         time.sleep(740)
