@@ -222,7 +222,7 @@ body {
     width: 850px;
     height: 650px;
     background: #64dfdf;
-    display: block;
+    display: none;
 }
 
 .info-content {
