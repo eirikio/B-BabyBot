@@ -28,7 +28,7 @@ donateBtn.addEventListener("click", () => {
 })
 
 infoBtn.addEventListener("click", () => {
-    infoWindow.style.display = "flex";
+    infoWindow.style.display = "block";
 })
 
 closeBtn[0].addEventListener("click", () => {
@@ -36,4 +36,56 @@ closeBtn[0].addEventListener("click", () => {
 })
 closeBtn[1].addEventListener("click", () => {
     infoWindow.style.display = "none"
+})
+
+let imgA = document.getElementById("item-a")
+
+imgA.addEventListener("mousedown", () => {
+    imgA.style.zIndex = "100"
+    imgA.style.transform = "scale(3)"
+})
+
+imgA.addEventListener("mouseleave", () => {
+    console.log("click")
+    imgA.style.zIndex = "0"
+    imgA.style.transform = "scale(1)"
+})
+
+imgA.addEventListener("mouseup", () => {
+    imgA.style.zIndex = "0"
+    imgA.style.transform = "scale(1)"
+})
+
+let imgB = document.getElementById("item-b")
+
+imgB.addEventListener("mousedown", () => {
+    imgB.style.zIndex = "100"
+    imgB.style.transform = "scale(3)"
+})
+
+imgB.addEventListener("mouseleave", () => {
+    imgB.style.zIndex = "0"
+    imgB.style.transform = "scale(1)"
+})
+
+imgB.addEventListener("mouseup", () => {
+    imgB.style.zIndex = "0"
+    imgB.style.transform = "scale(1)"
+})
+
+let imgC = document.getElementById("item-c")
+
+imgC.addEventListener("mousedown", () => {
+    imgC.style.zIndex = "100"
+    imgC.style.transform = "scale(3)"
+})
+
+imgC.addEventListener("mouseleave", () => {
+    imgC.style.zIndex = "0"
+    imgC.style.transform = "scale(1)"
+})
+
+imgC.addEventListener("mouseup", () => {
+    imgC.style.zIndex = "0"
+    imgC.style.transform = "scale(1)"
 })

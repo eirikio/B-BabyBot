@@ -222,7 +222,45 @@ body {
     width: 850px;
     height: 650px;
     background: #64dfdf;
-    display: none;
+    display: block;
+}
+
+.info-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#info-h1 {
+    margin-top: 20px;
+}
+
+.img-grid {
+    display: grid;
+}
+#item-a {
+    grid-column-start: 1;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 1;
+}
+#item-b {
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 1;
+}
+#item-c {
+    grid-column-start: 1;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+}
+.info-content img {
+    width: 400px;
+    margin: 10px;
+    user-select: none;
+    border-radius: 10px;
 }
 
 .close-icon {
@@ -231,4 +269,13 @@ body {
     height: 30px;
     cursor: pointer;
     user-select: none;
+}
+
+.tip-button {
+    width: 297px;
+    height: 49px;
+    margin: 20px;
+    background-size: 100%;
+    background-image: url(static/images/metamask-off.png);
+    cursor: pointer;
 }
