@@ -3,6 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 import time
 
@@ -53,21 +55,52 @@ def login():
         driver.find_element(By.CLASS_NAME, 'button').click()
 
         print("--Attempting to log in!--")
-
         sleep(10)
-        
         print("--Login successful!")
+        print("-----------------------")
+        baby_name = driver.find_element(By.XPATH, '/html/body/div[6]/div/div/div[2]/section/div[4]/div/form/input')
+        name = baby_name.get_attribute("value")
+        print("Hi " + name)
+        print("-----------------------")
+        print("Your current skills are: ")
+        
+        dex = driver.find_element(By.XPATH, '/html/body/div[2]/div/div/div[1]/div[2]/ul/li[1]/h3').text
+        app = driver.find_element(By.XPATH, '/html/body/div[2]/div/div/div[1]/div[2]/ul/li[2]/h3').text
+        play = driver.find_element(By.XPATH, '/html/body/div[2]/div/div/div[1]/div[2]/ul/li[3]/h3').text
+        kind = driver.find_element(By.XPATH, '/html/body/div[2]/div/div/div[1]/div[2]/ul/li[4]/h3').text
+        pat = driver.find_element(By.XPATH, '/html/body/div[2]/div/div/div[1]/div[2]/ul/li[5]/h3').text
+        pers = driver.find_element(By.XPATH, '/html/body/div[2]/div/div/div[1]/div[3]/ul/li[1]/h3').text
+        intell = driver.find_element(By.XPATH, '/html/body/div[2]/div/div/div[1]/div[2]/ul/li[2]/h3').text
+        obed = driver.find_element(By.XPATH, '/html/body/div[2]/div/div/div[1]/div[2]/ul/li[3]/h3').text
+        sleep_skills = driver.find_element(By.XPATH, '/html/body/div[2]/div/div/div[1]/div[2]/ul/li[4]/h3').text
+        ador = driver.find_element(By.XPATH, '/html/body/div[2]/div/div/div[1]/div[2]/ul/li[5]/h3').text
+        print('Dexterity: ' + dex)
+        print('Appetite: ' + app)
+        print('Playfulness: ' + play)
+        print('Kindness: ' + kind)
+        print('Patience: ' + pat)
+        print('Persuasion: ' + pers)
+        print('Intelligence: ' + intell)
+        print('Obedience: ' + obed)
+        print('Sleep Skills: ' + sleep_skills)
+        print('Adorability: ' + ador)
         
         babyScript()
 
 def babyScript():
     while running:
         print("--Questing!--")
+        #WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, '/html/body/div[2]/div/div/div[3]/div[2]/div[3]/button')).click()
         driver.find_element(By.XPATH, '/html/body/div[2]/div/div/div[3]/div[2]/div[3]/button').click()
         sleep(3)
+        #WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, '/html/body/div[12]/div/button[1]')).click()
         driver.find_element(By.XPATH, '/html/body/div[12]/div/button[1]').click()
         sleep(2)
         driver.find_element(By.XPATH, '/html/body/div[12]/div/button[1]').click()
+        sleep(2)
+        skill_gain = driver.find_element(By.XPATH, '/html/body/div[12]/div/div[6]/div/div/h2').text
+        skill_tree = driver.find_element(By.XPATH, '/html/body/div[12]/div/div[6]/div/div/img').get_attribute('src')
+        print(skill_tree + " gained ")
         sleep(2)
         driver.find_element(By.XPATH, '/html/body/div[12]/div/button[1]').click()
         sleep(2)
@@ -75,6 +108,9 @@ def babyScript():
         sleep(2)
         driver.find_element(By.XPATH, '/html/body/div[12]/div/button[1]').click()
         sleep(4)
+        
+        
+        print("Gained: " + skill_gain)
 
         print("New quest in 1 hour! (⌐ ͡■ ͜ʖ ͡■)")
         sleep(800)
@@ -89,8 +125,6 @@ def babyScript():
         driver.refresh()
         sleep(5)
         
-
-
 while True:
     event, values = window.read()
 
