@@ -1,281 +1,273 @@
 body {
-    margin: 0;
-    background: black;
-    overflow: hidden;
-    user-select: none;
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  user-select: none;
 }
 
 .page-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 @keyframes scolate {
-        0% {
-            transform:rotate(-5deg) scale(1.0);
-        }
-        50% {
-            transform: rotate(5deg) scale(1.1);
-        }
-        100% {
-            transform: rotate(-5deg) scale(1.0);
-        }
-
+  0% {
+    transform: rotate(-5deg) scale(1);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(-5deg) scale(1);
+  }
 }
 
 .page-container div {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .frame-7 {
-    position: absolute;
-    width: 1150px;
-    height: 950px;
-    background: #7400b8;
-    animation: scolate ease-in-out 5000ms infinite running;
-    transform: rotate(-5deg);
-
+  position: absolute;
+  width: 1150px;
+  height: 950px;
+  background: #7400b8;
+  animation: scolate ease-in-out 5000ms infinite running;
+  transform: rotate(-5deg);
 }
 
 .frame-6 {
-    position: absolute;
-    width: 1100px;
-    height: 900px;
-    background: #6930c3;
-    animation: scolate ease-in-out 5000ms infinite running;
-    animation-delay: 500ms;
-    transform: rotate(-5deg);
+  position: absolute;
+  width: 1100px;
+  height: 900px;
+  background: #6930c3;
+  animation: scolate ease-in-out 5000ms infinite running;
+  animation-delay: 500ms;
+  transform: rotate(-5deg);
 }
 
 .frame-5 {
-    position: absolute;
-    width: 1050px;
-    height: 850px;
-    background: #5e60ce;
-    animation: scolate ease-in-out 5000ms infinite running;
-    animation-delay: 1000ms;
-    transform: rotate(-5deg);
+  position: absolute;
+  width: 1050px;
+  height: 850px;
+  background: #5e60ce;
+  animation: scolate ease-in-out 5000ms infinite running;
+  animation-delay: 1000ms;
+  transform: rotate(-5deg);
 }
 
 .frame-4 {
-    position: absolute;
-    width: 1000px;
-    height: 800px;
-    background: #5390d9;
-    animation: scolate ease-in-out 5000ms infinite running;
-    animation-delay: 1500ms;
-    transform: rotate(-5deg);
+  position: absolute;
+  width: 1000px;
+  height: 800px;
+  background: #5390d9;
+  animation: scolate ease-in-out 5000ms infinite running;
+  animation-delay: 1500ms;
+  transform: rotate(-5deg);
 }
 
 .frame-3 {
-    position: absolute;
-    width: 950px;
-    height: 750px;
-    background: #4ea8de;
-    animation: scolate ease-in-out 5000ms infinite running;
-    animation-delay: 2000ms;
-    transform: rotate(-5deg);
+  position: absolute;
+  width: 950px;
+  height: 750px;
+  background: #4ea8de;
+  animation: scolate ease-in-out 5000ms infinite running;
+  animation-delay: 2000ms;
+  transform: rotate(-5deg);
 }
 
 .frame-2 {
-    position: absolute;
-    width: 900px;
-    height: 700px;
-    background: #48bfe3;
-    animation: scolate ease-in-out 5000ms infinite running;
-    animation-delay: 2500ms;
-    transform: rotate(-5deg);
+  position: absolute;
+  width: 900px;
+  height: 700px;
+  background: #48bfe3;
+  animation: scolate ease-in-out 5000ms infinite running;
+  animation-delay: 2500ms;
+  transform: rotate(-5deg);
 }
 
 .frame-1 {
-    position: absolute;
-    width: 850px;
-    height: 650px;
-    background: #56cfe1;
-    animation: scolate ease-in-out 5000ms infinite running;
-    animation-delay: 3000ms;
-    transform: rotate(-5deg);
-    
+  position: absolute;
+  width: 850px;
+  height: 650px;
+  background: #56cfe1;
+  animation: scolate ease-in-out 5000ms infinite running;
+  animation-delay: 3000ms;
+  transform: rotate(-5deg);
 }
 
 .frame {
-    position: absolute;
-    /*background: #64dfdf;*/
-    background: rgba(255, 255, 255, 0.144);
-    width: 800px;
-    height: 600px;
-    box-shadow: 0px 0px 10px #30bbbb;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    flex-direction: column;
-    font-family: 'Maven Pro', sans-serif;
+  position: absolute;
+  /*background: #64dfdf;*/
+  background: rgba(255, 255, 255, 0.144);
+  width: 800px;
+  height: 600px;
+  box-shadow: 0px 0px 10px #30bbbb;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+  font-family: "Maven Pro", sans-serif;
 }
 
 .hero-section {
-    margin-top: 70px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+  margin-top: 70px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
 }
 .hero-section h1 {
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 1px #56cfe1, 
-                4px 4px 1px #48bfe3, 
-                6px 6px 1px #4ea8de, 
-                8px 8px 1px #5e60ce,
-                10px 10px 1px #5390d9,
-                12px 12px 1px #6930c3,
-                14px 14px 1px #7400b8;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 1px #56cfe1, 4px 4px 1px #48bfe3, 6px 6px 1px #4ea8de,
+    8px 8px 1px #5e60ce, 10px 10px 1px #5390d9, 12px 12px 1px #6930c3,
+    14px 14px 1px #7400b8;
 }
 .hero-section h2 {
-    color: #000000;
-    text-shadow: 1px 1px 1px #ffffff;
+  color: #000000;
+  text-shadow: 1px 1px 1px #ffffff;
 }
 .hero-section h2 {
-    transform: translateY(-25px);
+  transform: translateY(-25px);
 }
 #h2-color {
-    color: hotpink;
-    text-shadow: 0px 0px 10px black;
+  color: hotpink;
+  text-shadow: 0px 0px 10px black;
 }
 
 .download-button {
-    transform: translateY(20px);
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  transform: translateY(20px);
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #dl-icon {
-    margin-right: 10px;
-    filter: invert(1);
+  margin-right: 10px;
+  filter: invert(1);
 }
 #download-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 50px;
-    background: #262929;
-    border: 1px solid black;
-    color: #fff;
-    text-shadow: 0px 0px 10px black;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  background: #262929;
+  border: 1px solid black;
+  color: #fff;
+  text-shadow: 0px 0px 10px black;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 #download-btn:hover {
-    background: #405050;
+  background: #405050;
 }
 #download-btn:active {
-    background: black;
+  background: black;
 }
 
 .info-buttons {
-    justify-content: flex-end;
-    align-self:center;
-    flex-direction: row;
+  justify-content: flex-end;
+  align-self: center;
+  flex-direction: row;
 }
 
 .info-button {
-    width: 200px;
-    height: 50px;
-    background: #262929;
-    border: 1px solid black;
-    color: #fff;
-    text-shadow: 0px 0px 10px black;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    cursor: pointer;
+  width: 200px;
+  height: 50px;
+  background: #262929;
+  border: 1px solid black;
+  color: #fff;
+  text-shadow: 0px 0px 10px black;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .info-button:hover {
-    background: #405050;
+  background: #405050;
 }
 .info-button:active {
-    background: black;
+  background: black;
 }
 
 .footer p {
-    text-shadow: 0px 0px 2px black;
+  text-shadow: 0px 0px 2px black;
 }
 .footer span {
-    letter-spacing: -4px;
+  letter-spacing: -4px;
 }
 
-
 #frame-donate {
-    position: absolute;
-    width: 850px;
-    height: 650px;
-    background: #64dfdf;
-    display: none;
+  position: absolute;
+  width: 850px;
+  height: 650px;
+  background: #64dfdf;
+  display: none;
 }
 
 #frame-info {
-    position: absolute;
-    width: 850px;
-    height: 650px;
-    background: #64dfdf;
-    display: none;
+  position: absolute;
+  width: 850px;
+  height: 650px;
+  background: #64dfdf;
+  display: none;
 }
 
 .info-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #info-h1 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .img-grid {
-    display: grid;
+  display: grid;
 }
 #item-a {
-    grid-column-start: 1;
-    grid-column-end: five;
-    grid-row-start: row1-start;
-    grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 1;
 }
 #item-b {
-    grid-column-start: 2;
-    grid-column-end: five;
-    grid-row-start: row1-start;
-    grid-row-end: 1;
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 1;
 }
 #item-c {
-    grid-column-start: 1;
-    grid-column-end: five;
-    grid-row-start: row1-start;
-    grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
 }
 .info-content img {
-    width: 400px;
-    margin: 10px;
-    user-select: none;
-    border-radius: 10px;
+  width: 400px;
+  margin: 10px;
+  user-select: none;
+  border-radius: 10px;
 }
 
 .close-icon {
-    transform: translate(810px , 10px);
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    user-select: none;
+  transform: translate(810px, 10px);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .tip-button {
-    width: 297px;
-    height: 49px;
-    margin: 20px;
-    background-size: 100%;
-    background-image: url(static/images/metamask-off.png);
-    cursor: pointer;
+  width: 297px;
+  height: 49px;
+  margin: 20px;
+  background-size: 100%;
+  background-image: url(static/images/metamask-off.png);
+  cursor: pointer;
 }
